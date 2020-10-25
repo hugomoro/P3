@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Kaushan";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Mashan";
+  src: url("../fonts/MaShanZheng-Regular.ttf");
+}
+@font-face {
+  font-family: "Handlee";
+  src: url("../fonts/Handlee-Regular.ttf");
+}
+@font-face {
+  font-family: "Amita";
+  src: url("../fonts/Amita-Regular.ttf");
+}
+@font-face {
+  font-family: "Dancing";
+  src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Rozha";
+  src: url("../fonts/RozhaOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Kalam";
+  src: url("../fonts/Kalam-Regular.ttf");
+}
+* {
+  margin: 0;
+}
+
+.main {
+  background-color: white;
+  height: 100%;
+  margin: 30px;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  background-color: #579c87;
+  text-align: center;
+  width: 100%;
+}
+.header__heading {
+  font-family: "Roboto", "Titillium Web", "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: -7px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 80px;
+}
+.header__heading a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+.footer {
+  background-color: #579c87;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer__contact {
+  padding: 18px 15px 18px 15px;
+  font-size: 25px;
+}
+.footer__contact a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+/*# sourceMappingURL=note.css.map */
