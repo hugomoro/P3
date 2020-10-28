@@ -1,8 +1,14 @@
 @import "fonts";
 @import "variables";
+@import "header";
+@import "footer";
 
 * {
     margin: 0;
+}
+
+html, body {
+    height: 100%;
 }
 
 .main {
@@ -15,6 +21,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    &__title {
+        font-size: 40px;
+        font-family: "Titillium Web","Trebuchet MS","Lucida Sans Unicode","Lucida Sans",Arial,sans-serif;
+        font-weight: bold;
+    }
+}
+
+.page {
+    background-color: $note-enchantee-bg;
+    height: 75%;
+    width: 95%;
+    box-shadow: 2px 2px 20px #ccc;
+    &__entete {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            font-family: "Mashan";
+            font-size: 50px;
+            font-weight: normal;
+        }
+        &__img {
+            padding: 55px 0 33px 0;
+            height: 105px;
+            width: 105px;
+        }
+    }
 }
 
 .header {

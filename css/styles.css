@@ -30,20 +30,21 @@
   font-family: "Kalam";
   src: url("../fonts/Kalam-Regular.ttf");
 }
-* {
-  margin: 0;
-}
-
-.main {
-  background-color: white;
-  height: 100%;
-  margin: 30px;
-  width: 980px;
-  margin-left: auto;
-  margin-right: auto;
+.footer {
+  background-color: #579c87;
+  position: fixed;
+  bottom: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer__contact {
+  padding: 18px 15px 18px 15px;
+  font-size: 25px;
+}
+.footer__contact a {
+  text-decoration: none;
+  color: #fdcb46;
 }
 
 .header {
@@ -61,6 +62,22 @@
 .header__heading a {
   text-decoration: none;
   color: #fdcb46;
+}
+
+* {
+  margin: 0;
+}
+
+.main {
+  background-color: white;
+  height: 100%;
+  margin: 30px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bloc-menu {
@@ -165,23 +182,6 @@
   justify-content: center;
   align-items: center;
   font-size: 28px;
-}
-
-.footer {
-  background-color: #579c87;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.footer__contact {
-  padding: 18px 15px 18px 15px;
-  font-size: 25px;
-}
-.footer__contact a {
-  text-decoration: none;
-  color: #fdcb46;
 }
 
 /*# sourceMappingURL=styles.css.map */
