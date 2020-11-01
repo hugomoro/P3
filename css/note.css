@@ -68,13 +68,8 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 .main {
   background-color: white;
-  height: 100%;
   margin: 30px;
   width: 980px;
   margin-left: auto;
@@ -83,67 +78,90 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
 }
-.main__title {
+.main .titre {
+  margin: 10px 0 40px 0;
   font-size: 40px;
   font-family: "Titillium Web", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
 }
 
-.page {
+.card {
   background-color: rgba(255, 179, 179, 0.4);
-  height: 75%;
-  width: 95%;
+  width: 950px;
   box-shadow: 2px 2px 20px #ccc;
 }
-.page__entete {
+.card .entete {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
-.page__entete__title {
+.card .entete__titre {
   font-family: "Mashan";
   font-size: 50px;
   font-weight: normal;
 }
-.page__entete__img {
+.card .entete__img {
   padding: 55px 0 33px 0;
   height: 105px;
   width: 105px;
 }
-
-.header {
-  background-color: #579c87;
-  text-align: center;
+.card .entree-plat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .entree-plat__titre {
+  height: 85px;
   width: 100%;
-}
-.header__heading {
-  font-family: "Roboto", "Titillium Web", "Trebuchet MS", Arial, sans-serif;
-  letter-spacing: -7px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  font-size: 80px;
-}
-.header__heading a {
-  text-decoration: none;
-  color: #fdcb46;
-}
-
-.footer {
-  background-color: #579c87;
-  position: fixed;
-  bottom: 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 22px 0 22px 0;
+  font-family: "Kalam";
+}
+.card .entree-plat__titre img {
+  width: 200px;
+  height: 30px;
+}
+.card .entree-plat__titre h2 {
+  font-size: 35px;
+}
+.card .entree-plat__content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
-.footer__contact {
-  padding: 18px 15px 18px 15px;
+.card .entree-plat__content .plat {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+  font-family: "Kalam";
   font-size: 25px;
 }
-.footer__contact a {
-  text-decoration: none;
-  color: #fdcb46;
+.card .entree-plat .plat .descriptif {
+  width: 70%;
+}
+.card .entree-plat .plat .descriptif--dessert {
+  width: 89%;
+}
+.card .pied {
+  display: flex;
+  justify-content: center;
+  margin: 65px 0 20px 0;
+}
+.card .pied__titre {
+  display: flex;
+  align-items: center;
+  font-family: "Mashan";
+  font-size: 40px;
+  font-weight: normal;
+}
+.card .pied__img {
+  height: 50px;
+  width: 50px;
 }
 
 /*# sourceMappingURL=note.css.map */
