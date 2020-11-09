@@ -131,11 +131,11 @@
   text-decoration: none;
   color: #fdcb46;
   transform: scale(1);
-  transition: transform ease 1s;
+  transition: transform ease 0.7s;
 }
 .main .retour a:hover {
   transform: scale(1.4);
-  animation: retour 0.8s;
+  animation: retour 0.7s forwards;
 }
 
 .card {
@@ -226,6 +226,9 @@
   }
   75% {
     opacity: 0.8;
+  }
+  85% {
+    opacity: 0.66;
   }
   100% {
     opacity: 0.5;

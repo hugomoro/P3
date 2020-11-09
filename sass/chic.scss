@@ -36,6 +36,12 @@
         a {
             text-decoration: none;
             color: $color-secondary;
+            transform: scale(1);
+            transition: transform ease 0.7s;
+        }
+        a:hover {
+            transform: scale(1.4);
+            animation: retour 0.7s forwards; 
         }
     }
 }
@@ -115,5 +121,23 @@
         .plat .descriptif--dessert {
             width: 77%;
         }
+    }
+}
+
+@keyframes retour {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    85% {
+        opacity: 0.66;
+    }
+    100% {
+        opacity: 0.5;
     }
 }
