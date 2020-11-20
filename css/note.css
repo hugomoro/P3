@@ -91,10 +91,28 @@
   font-size: 25px;
 }
 .footer__contact a {
+  display: block;
   text-decoration: none;
   color: #fdcb46;
 }
+.footer__contact a:hover {
+  animation: bounce 0.8s ease-out;
+}
 
+@keyframes bounce {
+  20%, 50%, 80%, to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
 * {
   margin: 0;
 }
@@ -140,7 +158,7 @@
 
 .card {
   background-color: rgba(255, 179, 179, 0.4);
-  width: 950px;
+  width: 100%;
   box-shadow: 2px 2px 20px #ccc;
 }
 .card .entete {
@@ -168,7 +186,6 @@
 }
 .card .entree-plat__titre {
   height: 85px;
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -181,6 +198,26 @@
 }
 .card .entree-plat__titre h3 {
   font-size: 28px;
+  position: relative;
+  display: block;
+  margin: 0px 30px;
+  cursor: pointer;
+}
+.card .entree-plat__titre h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: scaleX(0);
+  transition: transform 0.8s ease-in-out;
+  transform-origin: left;
+}
+.card .entree-plat__titre h3:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  border-bottom: 4px solid red;
 }
 .card .entree-plat__content {
   display: flex;
@@ -193,6 +230,7 @@
   margin: 20px 0 20px 0;
   font-family: "Kalam";
   font-size: 25px;
+  align-items: fle;
 }
 .card .entree-plat .plat .descriptif {
   width: 70%;

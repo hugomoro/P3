@@ -1,0 +1,14 @@
+@import "fonts";
+@import "variables";
+@import "header";
+@import "footer";
+
+* {
+    margin: 0;
+}
+
+.mention-leg {
+    display: flex;
+    justify-content: center;
+    margin-top: 240px;
+}

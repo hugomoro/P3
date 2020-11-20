@@ -48,7 +48,7 @@
 
 .card {
     background-color: $note-enchantee-bg;
-    width: 950px;
+    width: 100%;
     box-shadow: 2px 2px 20px #ccc;
     .entete {
         display: flex;
@@ -74,7 +74,6 @@
         align-items: center;
         &__titre {
             height: 85px;
-            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -87,7 +86,27 @@
         }
         &__titre h3 {
             font-size: $h3-fs;
+            position: relative;
+            display: block;
+            margin: 0px 30px;
+            cursor: pointer;
         }  
+        &__titre h3::after {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transform: scaleX(0);
+            transition: transform 0.8s ease-in-out;
+            transform-origin: left;
+        }
+        &__titre h3:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+            border-bottom: 4px solid red;
+        }
         &__content {
             display: flex;
             flex-direction: column;
@@ -99,6 +118,7 @@
             margin: 20px 0 20px 0;
             font-family: "Kalam";
             font-size: 25px;
+            align-items: fle;
         }
         .plat .descriptif {
             width: 70%;

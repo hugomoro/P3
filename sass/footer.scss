@@ -10,8 +10,27 @@
         padding: 18px 15px 18px 15px;
         font-size: 25px;
         a {
+            display: block;
             text-decoration: none;
             color: $color-secondary;
         }
+        a:hover {
+            animation: bounce 0.8s ease-out;
+        }
+    }    
+}
+
+@keyframes bounce {
+    20%, 50%, 80%,to {
+        transform: translateY(0);
     }
+    40% {
+        transform: translateY(-30px);
+    }
+    70% {
+        transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(-4px);
+    } 
 }

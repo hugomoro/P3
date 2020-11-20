@@ -81,7 +81,6 @@
         line-height: 30px;
         &__titre {
             height: 85px;
-            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -94,7 +93,28 @@
         &__titre h3 {
             font-size: $h3-fs;
             font-weight: normal;
+            position: relative;
+            display: block;
+            margin: 0px 30px;
+            padding-bottom: 7px;
+            cursor: pointer;
         }  
+        &__titre h3::after {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transform: scaleX(0);
+            transition: transform 0.8s ease-in-out;
+            transform-origin: left;
+        }
+        &__titre h3:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+            border-bottom: 4px solid #4D94F5;
+        }
         &__content {
             display: flex;
             flex-direction: column;
@@ -105,6 +125,7 @@
             justify-content: space-around;
             margin: 20px 0 20px 0;
             font-size: 22px;
+            align-items: center;
         }
         .plat .descriptif {
             width: 57%;
