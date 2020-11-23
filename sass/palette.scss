@@ -155,3 +155,10 @@
         opacity: 0.5;
     }
 }
+
+@media screen and (max-width: 320px)
+{
+    body {
+        width: fit-content;
+    }
+}
