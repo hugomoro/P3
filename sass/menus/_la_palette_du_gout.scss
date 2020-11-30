@@ -1,0 +1,33 @@
+.palette_du_gout {
+    
+    .card {
+        background-color: $palette-du-gout-bg;
+    }
+        
+    .entete {
+        font-family: "Kaushan";
+        &__titre {
+        background-image: linear-gradient(to right, #c1f497 0%,#6dae6a 100%);
+        }
+    }
+        
+    .entree-plat {
+        font-family: "Architect";
+        line-height: 30px;
+        &__titre h3 {
+            font-weight: normal;
+            padding-bottom: 7px;
+        }
+        &__titre h3:hover::after {
+            border-bottom: 4px solid #95DC68;
+        }
+        .descriptif {
+            width: 60%;
+            margin-left: 60px;
+        }
+        .prix {
+            margin-right: 110px;
+            font-weight: bold;
+        }  
+    }
+}

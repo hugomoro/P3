@@ -1,0 +1,48 @@
+.chic_a_la_francaise {
+    
+    .card {
+        background-color: $chic-a-la-francaise-bg;
+    }    
+        
+    .entete {
+        font-family: "Amita";
+        &__titre {
+            background-image: linear-gradient(to right, #b285ee 0%,#e2a162 100%);
+        }
+    }
+        
+    .entree-plat {
+        line-height: 33px;
+        font-family: "Scheherazade";
+        &--orange {
+            color: #E2A164;
+        }
+        &--mauve {
+            color: #A6679A;
+        }
+        &--violet {
+            color: #6E4BCD;
+        }
+        &__titre h3 {
+            padding-bottom: 5px;
+        }
+        &__titre h3:hover::after {
+            border-bottom: 4px solid #E2A164;
+        }
+        &__titre--mauve h3:hover::after {
+            border-bottom: 4px solid #A6679A;
+        }
+        &__titre--violet h3:hover::after {
+            border-bottom: 4px solid #6E4BCD;
+        }
+        &__content .plat {
+            font-size: 30px;
+        }
+        .descriptif {
+            width: 55%;
+        }
+        .descriptif--dessert {
+            width: 77%;
+        }   
+    }   
+}

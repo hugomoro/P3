@@ -1,0 +1,50 @@
+.note_enchantee {
+    
+    .card {
+        background-color: $note-enchantee-bg;
+    }
+
+    .entete {
+        font-family: "Yellowtail";
+        &__titre {
+            margin-top: 40px;
+            color: black;
+        }
+        &__img {
+            padding-top: 55px;
+            height: 105px;
+            width: 105px;
+        }        
+    }
+
+    .entree-plat {
+        font-family: "Kalam";
+        &__titre h3:hover::after {
+            border-bottom: 4px solid #FF4500;
+        }
+        .descriptif {
+            width: 70%;
+        }
+        .descriptif--dessert {
+            width: 89%;
+        }
+    }
+    
+
+    .pied {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 40px 0;
+        &__titre {
+            display: flex;
+            align-items: center;
+            font-family: "Yellowtail";
+            font-size: 40px;
+            font-weight: normal;
+        }
+        &__img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}    
