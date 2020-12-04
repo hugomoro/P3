@@ -20,7 +20,7 @@
     .entree-plat {
         font-family: "Kalam";
         &__titre h3:hover::after {
-            border-bottom: 4px solid #FF4500;
+            border-bottom: 4px solid black;
         }
         .descriptif {
             width: 70%;

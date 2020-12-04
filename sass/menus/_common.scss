@@ -26,14 +26,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
     &__titre {
         color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;margin-top: 70px;
-        font-size: 60px;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -o-background-clip: text;
+        font-size: 50px;
         font-weight: normal;
+        margin-top: 70px;
+        margin-bottom: 30px;
     }
 }
     
@@ -49,7 +50,7 @@
         margin: 22px 0 22px 0;
     }
     &__titre img {
-        width: 200px;
+        max-width: 200px;
         height: 30px;
     }
     &__titre h3 {
@@ -108,23 +109,5 @@
     a:hover {
         transform: scale(1.4);
         animation: retour 0.7s forwards; 
-    }
-}
-
-@keyframes retour {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 0.8;
-    }
-    85% {
-        opacity: 0.66;
-    }
-    100% {
-        opacity: 0.5;
     }
 }
